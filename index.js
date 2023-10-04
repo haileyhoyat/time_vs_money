@@ -137,7 +137,7 @@ class View {
       })
       //total_time label
       const TotalTimeLabel = this.createElement('p')
-      TotalTimeLabel.textContent = "Total time needed to cover all monthly expenses: " + parseFloat(total_time).toFixed(2)
+      TotalTimeLabel.textContent = "Total time needed to cover all monthly expenses: " + parseFloat(total_time).toFixed(2) + "hrs (or " + parseFloat(total_time / 8).toFixed(2) + " standard 8hr days)"
       this.total_time_display.append(TotalTimeLabel)
     }   
 
